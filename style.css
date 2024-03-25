@@ -1,0 +1,109 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the navigation bar */
+nav {
+  background-color: #001f3f; /* Dark blue background color */
+  display: flex;
+  align-items: center; /* Vertically align items */
+  padding: 20px;
+}
+
+nav .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-right: auto; /* Push the logo to the left */
+  background-color: #001f3f; /* Dark blue background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+nav .logo:hover {
+  background-color: #003366; /* Darker blue on hover */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px; /* Add space between navigation items */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Remove margin for the first navigation item */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer; /* Add pointer cursor */
+}
+
+/* Styling the cards section */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Styling the individual cards */
+.card {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-description {
+  padding: 20px;
+}
+
+.card-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.btn-buy,
+.btn-add-to-cart {
+  margin-top: 12px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-buy:hover,
+.btn-add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+/* Styling the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}

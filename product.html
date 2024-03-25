@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .product-info {
+        margin-bottom: 20px;
+      }
+      .product-info h2 {
+        margin-bottom: 10px;
+      }
+      .btn-buy {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn-buy:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product Details</h1>
+
+      <div class="product-info">
+        <h2>Fragrance Details</h2>
+        <p><strong>Name:</strong> <span id="productName"></span></p>
+        <p>
+          <strong>Description:</strong> <span id="productDescription"></span>
+        </p>
+        <p>
+          <strong>Price:</strong> <span id="productPrice"></span>
+        </p>
+      </div>
+
+      <button class="btn-buy" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <script>
+      // Function to get the value of a URL parameter
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return "";
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      // Get the product name and description from the URL query parameters
+      var productName = getParameterByName("product");
+      var productDescription = getParameterByName("description");
+      var productPrice = getParameterByName("price");
+      console.log(productName, productDescription, productPrice);
+
+      // Display product details on the page
+      document.getElementById("productName").innerText = productName;
+      document.getElementById("productDescription").innerText =
+        productDescription;
+      document.getElementById("productPrice").innerText = productPrice;
+
+      // Function to execute when "Buy Now" button is clicked
+      function buyNow() {
+        alert("Thank you for your purchase!");
+        window.location.href = "index.html"; // Redirect to index.html
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fragrance Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html" class="logo">KAPPU</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="cards">
+      <div class="card">
+        <img src="img/F-1.jpg" alt="Sweet Affair" />
+        <div class="card-description">
+          <h2>Sweet Affair</h2>
+          <p>Description of Sweet Affair</p>
+          <p>Price: $50</p>
+          <button
+            class="btn-add-to-cart"
+            onclick="addToCart('Sweet Affair', 'Description of Sweet Affair', '$50')"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/F-1.jpg" alt="Sweet Affair" />
+        <div class="card-description">
+          <h2>Gucci</h2>
+          <p>Description of Gucci</p>
+          <button
+            class="btn-add-to-cart"
+            onclick="addToCart('Gucci', 'Description of Gucci')"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/F-1.jpg" alt="Sweet Affair" />
+        <div class="card-description">
+          <h2>Dior</h2>
+          <p>Description of Dior</p>
+          <button
+            class="btn-add-to-cart"
+            onclick="addToCart('Dior', 'Description of Dior')"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/F-1.jpg" alt="Sweet Affair" />
+        <div class="card-description">
+          <h2>Tiko</h2>
+          <p>Description of Tiko</p>
+          <button
+            class="btn-add-to-cart"
+            onclick="addToCart('Tiko', 'Description of Tiko')"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Fragrance Store</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script src="script.js"></script>
+  </body>
+</html>
