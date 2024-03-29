@@ -5,27 +5,29 @@
   box-sizing: border-box;
 }
 
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #86bbf3;
+  margin: 0;
+  padding: 0;
+}
+
 /* Styling the navigation bar */
 nav {
-  background-color: #001f3f; /* Dark blue background color */
+  background-color: #4c739a;
+  /* Dark blue background color */
   display: flex;
-  align-items: center; /* Vertically align items */
-  padding: 20px;
+  align-items: center;
+  justify-content: space-between;;
+  padding-right: 10%;
 }
 
-nav .logo {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem; /* Adjust font size as needed */
-  font-weight: bold;
-  margin-right: auto; /* Push the logo to the left */
-  background-color: #001f3f; /* Dark blue background color */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px 20px; /* Adjust padding as needed */
-}
+
 
 nav .logo:hover {
-  background-color: #003366; /* Darker blue on hover */
+  background-color: #003366;
+  /* Darker blue on hover */
 }
 
 nav ul {
@@ -34,18 +36,22 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px; /* Add space between navigation items */
+  margin-left: 20px;
+  /* Add space between navigation items */
 }
 
 nav ul li:first-child {
-  margin-left: 0; /* Remove margin for the first navigation item */
+  margin-left: 0;
+  /* Remove margin for the first navigation item */
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: bold;
-  cursor: pointer; /* Add pointer cursor */
+  cursor: pointer;
+  /* Add pointer cursor */
+  margin-left: 30px;
 }
 
 /* Styling the cards section */
@@ -63,6 +69,7 @@ nav ul li a {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
 }
 
 .card img {
@@ -76,7 +83,7 @@ nav ul li a {
 
 .card-description h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card-description p {
@@ -105,5 +112,5 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0px;
 }

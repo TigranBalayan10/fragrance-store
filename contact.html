@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      /* CSS for styling the form */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      button {
+        background-color: #007bff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <p>
+      A customer service representative is available at
+      <a href="mailto:kappufragrances@gmail.com">kappufragrances@gmail.com</a>
+      every day of the week from 8am to 8pm.
+    </p>
+    <p>You can also fill out the form below.</p>
+
+    <!-- Form for collecting user information -->
+    <form id="contactForm">
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" />
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="country">Country/Region</label>
+      <input type="text" id="country" name="country" />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fragrance Store</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <a href="index.html" class="logo">KAPPU</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="cards">
-      <div class="card">
-        <img src="img/F-1.jpg" alt="Sweet Affair" />
-        <div class="card-description">
-          <h2>Sweet Affair</h2>
-          <p>Description of Sweet Affair</p>
-          <p>Price: $50</p>
-          <button
-            class="btn-add-to-cart"
-            onclick="addToCart('Sweet Affair', 'Description of Sweet Affair', '$50')"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/F-1.jpg" alt="Sweet Affair" />
-        <div class="card-description">
-          <h2>Gucci</h2>
-          <p>Description of Gucci</p>
-          <button
-            class="btn-add-to-cart"
-            onclick="addToCart('Gucci', 'Description of Gucci')"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/F-1.jpg" alt="Sweet Affair" />
-        <div class="card-description">
-          <h2>Dior</h2>
-          <p>Description of Dior</p>
-          <button
-            class="btn-add-to-cart"
-            onclick="addToCart('Dior', 'Description of Dior')"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Kappu Fragrance Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <div class="card">
-        <img src="img/F-1.jpg" alt="Sweet Affair" />
-        <div class="card-description">
-          <h2>Tiko</h2>
-          <p>Description of Tiko</p>
-          <button
-            class="btn-add-to-cart"
-            onclick="addToCart('Tiko', 'Description of Tiko')"
-          >
-            Add to Cart
-          </button>
-        </div>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html" class="logo"> <img src="img/logo_smpl.webp" width="75px" </img> </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="cards">
+    <div class="card">
+      <img src="img/F-2.jpg" alt="Tobacco Nights" />
+      <div class="card-description">
+        <h2> Tobacco Nights </h2>
+        <p> "Tobacco Nights" eau de parfum by Kappu is a captivating unisex fragrance which blends the richness of
+          tobacco with sweet apricot, warm cinnamon, creamy tonka bean, and luxurious cognac. It's similar to enjoying a
+          pleasant evening by the fireside, but with added sophistication and appeal. Suitable for people who want a
+          fragrance that is both comfortable and appealing, ensuring a lasting impression wherever you go.</p>
+        <p> Price: $95</p>
+        <button class="btn-add-to-cart" onclick="addToCart('Tobacco Nights','Description of Tobacco Nights', '$95')">
+          Add to Cart
+        </button>
       </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Fragrance Store</p>
-    </footer>
+    <div class="card">
+      <img src="img/F-3.jpg" alt="Iris Breeze" />
+      <div class="card-description">
+        <h2> Iris Breeze</h2>
+        <p>“Iris Breeze” parfum by Kappu is a subtle yet intriguing unisex fragrance that blends the timeless elegance
+          of iris with the soft muskiness of ambrette. Ripe pear gives the scent a refreshing sweetness, and ambroxan
+          and musk form a warm, enveloping foundation. This fragrance conveys a sense of natural beauty and grace,
+          making it ideal for those who value effortless sophistication.
+        <p> Price: $95</p>
+        </p>
+        <button class="btn-add-to-cart" onclick="addToCart('Iris Breeze', 'Description of Iris Breeze', '$95')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
 
-    <!-- JavaScript for Interactivity -->
-    <script src="script.js"></script>
-  </body>
+    <div class="card">
+      <img src="img/F-4.png" alt="Citrus Dreams" />
+      <div class="card-description">
+        <h2> Citrus Dreams</h2>
+        <p> “Citrus Dream” parfum by Kappu is a scent that combines the smell of spring's first bloom with the bright
+          flavor of sun-kissed citrus groves. It begins with the delicate delicacy of apple blossom and the energizing
+          glitter of lemon, enticing the senses with a fresh and radiant atmosphere.
+          As the perfume progresses, Iso E Super adds depth and mystery, while ambroxan provides a warm and sensual
+          appeal. The velvety embrace of musk rounds out the mix, leaving a lingering trail of refinement and mystery.
+          Each note harmonizes in "Citrus Dream," creating an exquisite olfactory journey that evokes dreams of
+          limitless possibilities and eternal elegance.
+        </p>
+        <p> Price: $95</p>
+        <button class="btn-add-to-cart" onclick="addToCart('Citrus Dreams', 'Description of Citrus Dreams', '$95')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Kappu </p>
+  </footer>
+
+  <!-- JavaScript for Interactivity -->
+  <script src="script.js"></script>
+</body>
+
 </html>
